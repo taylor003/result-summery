@@ -1,0 +1,245 @@
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,800&family=Manrope:wght@800&family=Overpass:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+
+:root{
+  /* ### Primary */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 50%, 74%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+ /* ### Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+ *,*>*{
+  font-family: 'Manrope', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ }
+ body{
+  min-height: 100vh;
+ }
+
+ .main{
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 20%;
+  height: 440px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--White);
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ section{
+  padding: 15px;
+ }
+
+.left-side{
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ height: 440px;
+ width: 350px;
+ border-radius: 30px;
+ background-color: var(--Light-royal-blue-background);
+}
+.left-side h3{
+ color: var(--Light-lavender);
+ margin: 14px;
+}
+
+.circle{
+ background-color: var(--Violet-blue-circle);
+ border: 50%;
+ border-radius: 50%;
+ height: 150px;
+ width: 150px;
+ margin: 10px;
+ text-align: center;
+}
+.circle h1{
+ margin-top: 2.5rem;
+ font-size: 38px;
+ font-weight: 500;
+ color: var(--White);
+}
+.circle p{
+ margin: 4px;
+ font-size: 11px;
+ color: var(--Light-lavender);
+ font-weight: 700;
+}
+
+.left-side b{
+ font-size: 22px;
+ color: var(--White);
+ font-weight: 500;
+ margin: 10px;
+}
+
+.info{
+ height: 80px;
+ width: 190px;
+ text-align: center;
+ color: var(--Light-lavender);
+ font-size: 12px;
+ margin: 10px;
+}
+
+.right-side{
+ display: flex;
+ flex-direction: column;
+ width: 250px;
+ margin: 15px;
+}
+.right-side h3{
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: var(--Dark-gray-blue);
+}
+
+.rows{
+ display: flex;
+ flex-direction: column;
+}
+.row{
+ display: flex;
+ flex-direction: row;
+ height: 50px;
+ width: 235px;
+ margin-bottom: 15px;
+ border-radius: 12px;
+ align-items: center;
+}
+.badge{
+ word-spacing: 10px;
+ justify-content: space-between;
+}
+.badge b{
+ margin-right: 60px;
+}
+.badge img{
+  margin-left: 8px;
+}
+.row-one{
+ background-color: hsl(0, 100%, 96%);
+ color: hsl(0, 100%, 69%);
+ font-weight: 500;
+}
+
+.row-two{
+  background-color: hsl(59, 70%, 86%);
+  color: hsl(59, 70%, 48%);
+  font-weight: 500;
+}
+.row-three{
+  background-color: hsl(166, 50%, 84%);
+  color: hsl(166, 50%, 58%);
+  font-weight: 500;
+}
+.row-four{
+   color: hsl(224, 30%, 59%);
+   font-weight: 500;
+   background-color:  hsl(224, 30%, 89%);
+}
+
+
+button{
+ background-color: var(--Dark-gray-blue);
+ width: 100%;
+ border-radius: 22px;
+ padding: .7rem;
+ color: var(--Pale-blue);
+ font-weight: 700;
+ margin: .2rem;
+ font-size: 19px;
+ cursor: pointer;
+}
+button:hover{
+  background-color: var(--Light-royal-blue-background);
+  transition: all;
+}
+
+
+@media screen and (max-width: 1023px) {
+ .main{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+ }
+
+ .left-side{
+  width: auto;
+ }
+ .left-side p{
+  font-size: 17px;
+  width: auto;
+ }
+
+ .right-side{
+  width: auto;
+ }
+ .row{
+  width: auto;
+ }
+ .row p{
+  margin-left:  102px;
+  
+ }
+
+}
+
+@media screen and (max-width:769px){
+ .main{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+ }
+
+ .left-side{
+  width: auto;
+ }
+ .left-side p{
+  font-size: 27px;
+  width: auto;
+ }
+ .right-side{
+  width: auto;
+ }
+ .row{
+  width: auto;
+ }
+ .row p{
+  margin-left:  290px;
+  width: 90px;
+  font-size: 23px;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
